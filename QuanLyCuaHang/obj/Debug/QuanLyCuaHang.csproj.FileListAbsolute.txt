@@ -1,0 +1,16 @@
+D:\Winform\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.csproj.AssemblyReference.cache
+D:\Winform\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.fAdmin.resources
+D:\Winform\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.fInfomation.resources
+D:\Winform\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.fLogin.resources
+D:\Winform\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.Properties.Resources.resources
+D:\Winform\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.csproj.GenerateResource.cache
+D:\Winform\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.csproj.CoreCompileInputs.cache
+D:\Winform\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.fManagerStore.resources
+D:\Winform\QuanLyCuaHang\bin\Debug\QuanLyCuaHang.exe.config
+D:\Winform\QuanLyCuaHang\bin\Debug\QuanLyCuaHang.exe
+D:\Winform\QuanLyCuaHang\bin\Debug\QuanLyCuaHang.pdb
+D:\Winform\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.exe
+D:\Winform\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.pdb
+D:\Winform\QuanLyCuaHang\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\Winform\QuanLyCuaHang\bin\Debug\stdole.dll
+D:\Winform\QuanLyCuaHang\obj\Debug\QuanLyCuaHang.csproj.CopyComplete

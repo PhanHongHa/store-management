@@ -1,0 +1,73 @@
+CREATE DATABASE QuanLyCuaHang
+GO
+
+USE QuanLyCuaHang
+GO
+
+CREATE TABLE Account
+(
+	UserName NVARCHAR(100) PRIMARY KEY,
+	DisplayName NVARCHAR(100) NOT NULL DEFAULT N'USER',
+	Password NVARCHAR(100) NOT NULL DEFAULT 0,
+	Type INT NOT NULL DEFAULT 0 -- 0:staff   1:Admin
+)
+GO
+
+CREATE TABLE Customers
+(
+	Id INT IDENTITY PRIMARY KEY,
+	Name NVARCHAR(100) NOT NULL DEFAULT N'Khách hàng',
+	Address NVARCHAR(100) ,
+	PhoneNumber NVARCHAR(100) NOT NULL,
+	Status NVARCHAR(100) NOT NULL DEFAULT N'Chưa thanh toán'
+)
+GO
+
+CREATE TABLE ProductCategory
+(
+	Id INT IDENTITY PRIMARY KEY,
+	Name NVARCHAR(100) NOT NULL DEFAULT N'Chưa đặt tên'
+	
+)
+GO
+
+CREATE TABLE Product
+(
+	Id INT IDENTITY PRIMARY KEY,
+	Name NVARCHAR(100) NOT NULL DEFAULT N'Chưa đặt tên',
+	IdCategory INT NOT NULL,
+	Price FLOAT NOT NULL DEFAULT 0	
+	
+	FOREIGN KEY (IdCategory) REFERENCES dbo.ProductCategory(Id)
+)
+GO
+
+
+CREATE TABLE Bill
+(
+	Id INT IDENTITY PRIMARY KEY,
+	DateCheckIn DATE NOT NULL DEFAULT GETDATE(),
+	DateCheckOut DATE ,
+	IdCustomer INT NOT NULL,
+	
+	Status INT NOT NULL DEFAULT 0,
+	Discount INT
+	
+	
+	FOREIGN KEY (IdCustomer) REFERENCES dbo.Customers(Id)
+)
+GO
+
+CREATE TABLE BillInfo
+(
+	Id INT IDENTITY PRIMARY KEY,
+	IdBill INT NOT NULL,
+	IdProduct INT NOT NULL,
+	Count INT NOT NULL DEFAULT 0
+	
+	
+	FOREIGN KEY (IdBill) REFERENCES dbo.Bill(Id),
+	FOREIGN KEY (IdProduct) REFERENCES dbo.Product(Id)
+)
+GO
+
